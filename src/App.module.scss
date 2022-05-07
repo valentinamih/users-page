@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.appWrapper {
+  display: grid;
+  grid-template-columns: 152px / 665px * 100% 1fr ;
+  max-width: 665px;
+  margin: auto;
+  background-color: white;
+  top: 0;
+  font-family: 'Roboto', sans-serif;
+}
+

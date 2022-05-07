@@ -1,0 +1,9 @@
+@import "../../styles/colors";
+
+.userItem {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: $light-gray;
+  margin: 31px 15px 62px 15px;
+  border-radius: 8px;
+}

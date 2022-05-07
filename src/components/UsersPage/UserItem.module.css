@@ -1,0 +1,9 @@
+.userItem {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: rgb(243, 243, 243);
+  margin: 31px 15px 62px 15px;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=UserItem.module.css.map */
