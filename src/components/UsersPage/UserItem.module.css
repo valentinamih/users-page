@@ -1,9 +1,26 @@
 .userItem {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  align-items: end;
   background-color: rgb(243, 243, 243);
-  margin: 31px 15px 62px 15px;
+  margin-bottom: 14px;
   border-radius: 8px;
+}
+
+.userItemField {
+  margin: 10px 0 7px 10px;
+  font-size: 13px;
+}
+.userItemField span {
+  color: rgb(189, 189, 189);
+}
+
+.userItemLink {
+  display: grid;
+  justify-items: end;
+  margin: 0 10px 10px 0;
+  color: rgb(75, 81, 239);
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=UserItem.module.css.map */

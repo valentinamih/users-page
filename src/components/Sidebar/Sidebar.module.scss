@@ -4,3 +4,14 @@
     background-color: $dark-gray;
     height: 100%;
 }
+
+.sort {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin-top: 35px;
+    margin-left: 21px;
+    gap: 10px;
+    span {
+        margin-left: 21px;
+    }
+}

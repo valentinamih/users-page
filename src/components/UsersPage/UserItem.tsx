@@ -1,16 +1,19 @@
 import React from "react";
 import {UserType} from "../../types/types";
 import style from './UserItem.module.scss'
+import {NavLink} from "react-router-dom";
 
 export const UserItem: React.FunctionComponent<PropsType> = (props) => {
     return <div className={style.userItem}>
         <div>
-            <p>Name: {props.user.name}</p>
-            <p>Address: {props.user.address.city}</p>
-            <p>Company: {props.user.company.name}</p>
+            <div className={style.userItemField}><span>Name: </span>{props.user.name}</div>
+            <div className={style.userItemField}><span>Address: </span>{props.user.address.city}</div>
+            <div className={style.userItemField}><span>Company: </span>{props.user.company.name}</div>
         </div>
         <div>
-            <a>More</a>
+            <NavLink to={'/user/' + props.user.id} className={style.userItemLink}>
+                More
+            </NavLink>
         </div>
     </div>
 }

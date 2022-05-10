@@ -1,12 +1,15 @@
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
 import usersReducer from './usersSlice'
+import {reducer as formReducer} from 'redux-form';
+
 const rootReducer = combineReducers({
-    usersReducer
+    usersReducer,
+    form: formReducer
 })
 
 export const setupStore = () => {
     return configureStore({
-        reducer: rootReducer
+        reducer: rootReducer,
     })
 }
 

@@ -1,0 +1,54 @@
+@import "../../styles/colors";
+
+.userDataContainer {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  margin: 0 36px 0 36px;
+}
+
+.userDataHeader {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.userForm {
+  display: grid;
+  justify-items: end;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.userFormFields {
+  border: 1px solid $light-gray;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 9px;
+
+  :disabled {
+    color: #BDBDBD;
+  }
+}
+
+.userFormField {
+  margin: 10px 0 10px 12px;
+}
+
+.submitFormButton {
+  display: grid;
+  height: 24px;
+  margin-top: 15px;
+  padding: 5px 7px 5px 7px;
+  border: 0;
+  border-radius: 5px;
+  width: fit-content;
+  font-size: 12px;
+  color: white;
+  background-color: $green;
+
+  &:disabled {
+    background-color: $dark-gray;
+  }
+}
+

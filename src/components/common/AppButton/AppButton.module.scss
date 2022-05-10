@@ -1,0 +1,14 @@
+@import "../../../styles/colors";
+
+.appButton {
+  display: grid;
+  align-items: center;
+  background-color: $blue;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  min-height: 24px;
+  width: fit-content;
+  overflow: hidden;
+  font-size: 14px;
+}

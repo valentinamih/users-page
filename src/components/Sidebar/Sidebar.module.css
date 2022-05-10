@@ -3,4 +3,15 @@
   height: 100%;
 }
 
+.sort {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  margin-top: 35px;
+  margin-left: 21px;
+  gap: 10px;
+}
+.sort span {
+  margin-left: 21px;
+}
+
 /*# sourceMappingURL=Sidebar.module.css.map */

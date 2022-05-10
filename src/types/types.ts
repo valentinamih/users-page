@@ -2,10 +2,11 @@ export type UserType = {
     address: AddressType
     company: CompanyType
     email: string
-    id: number
+    id: number | undefined
     name: string
     phone: string
     username: string
+    website: string
 }
 
 export type AddressType = {
