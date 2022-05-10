@@ -10,8 +10,8 @@ export const UsersPage: React.FunctionComponent<PropsType> = (props) => {
     let isLoading = AppUseSelector(usersSelector.isLoading)
     return <div className={style.usersContainer}>
         <h4>Users list</h4>
-        {isLoading ? <Preloader /> :users.map(user => {
-            return <UserItem user={user} key={user.id} />
+        {isLoading ? <Preloader/> : users.map(user => {
+            return <UserItem user={user} key={user.id}/>
         })}
         <span className={style.usersCount}>{users.length} users found</span>
     </div>

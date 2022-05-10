@@ -10,7 +10,7 @@ const initialState: InitialStateType = {
 
 export const getUsers = createAsyncThunk('users/getUsers',
     async function () {
-    let res = await usersAPI.requestUsers()
+        let res = await usersAPI.requestUsers()
         return res.data
     })
 export const getUser = createAsyncThunk('users/getUser',
@@ -31,9 +31,7 @@ export const sortUsers = createAsyncThunk('users/sortUsers',
 export const usersSlice = createSlice({
     name: 'users',
     initialState: initialState,
-    reducers: {
-
-    },
+    reducers: {},
     extraReducers: builder => {
         builder.addCase(getUsers.pending, (state, action) => {
             state.isLoading = true

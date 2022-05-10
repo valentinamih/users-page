@@ -1,0 +1,35 @@
+div .error {
+  border: 1px solid red;
+}
+
+div .error input, textarea {
+  border: 0;
+}
+
+div .error {
+  border: 1px solid red;
+}
+
+.formField {
+  display: grid;
+  margin-top: 3px;
+  border-radius: 5px;
+  width: 211px;
+}
+
+input, textarea {
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 5px;
+  margin: 0;
+  height: 22px;
+  background-color: white;
+  font-size: 12px;
+}
+
+textarea {
+  resize: none;
+  height: 50px;
+  width: 420px;
+}
+
+/*# sourceMappingURL=FormControl.module.css.map */

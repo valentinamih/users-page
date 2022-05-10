@@ -21,12 +21,12 @@ export const UserPage: React.FunctionComponent<PropsType> = (props) => {
     }
     let user = AppUseSelector(usersSelector.user)
     let isLoading = AppUseSelector(usersSelector.isLoading)
-    return <div >
-        {(isLoading || !user) ? <Preloader /> : <UserDataReduxForm initialValues={user}
-                                                                   editMode={editMode}
-                                                                   user={user}
-                                                                   goToEditMode={() => toggleEditMode(true)}
-                                                                   onSubmit={formSubmit}/>}
+    return <div>
+        {(isLoading || !user) ? <Preloader/> : <UserDataReduxForm initialValues={user}
+                                                                  editMode={editMode}
+                                                                  user={user}
+                                                                  goToEditMode={() => toggleEditMode(true)}
+                                                                  onSubmit={formSubmit}/>}
     </div>
 }
 

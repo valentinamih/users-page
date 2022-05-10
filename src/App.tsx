@@ -16,8 +16,8 @@ export const App: React.FunctionComponent<PropsType> = (props) => {
     return <div className={style.appWrapper}>
         <Sidebar/>
         <Routes>
-            <Route path={'/'} element={<UsersPage />}/>
-            <Route path='/user/:userId' element={<UserPage />}/>
+            <Route path={'/'} element={<UsersPage/>}/>
+            <Route path='/user/:userId' element={<UserPage/>}/>
         </Routes>
 
     </div>

@@ -4,8 +4,6 @@ import {AppButton} from "../common/AppButton/AppButton";
 import {useDispatch} from "react-redux";
 import {AppDispatch} from "../../store/store";
 import {UserType} from "../../types/types";
-import {AppUseSelector} from "../../store/useSelector";
-import {usersSelector} from "../../store/usersSelector";
 import {sortUsers} from "../../store/usersSlice";
 
 
@@ -22,7 +20,7 @@ export const Sidebar: React.FunctionComponent<PropsType> = (props) => {
                     return user.name
                 }
             })}/>
-            <AppButton buttonText={'by city'} onClickFunction={() => sort( {
+            <AppButton buttonText={'by city'} onClickFunction={() => sort({
                 filter: (user: UserType) => {
                     return user.address.city
                 }
@@ -31,5 +29,4 @@ export const Sidebar: React.FunctionComponent<PropsType> = (props) => {
     </div>
 }
 
-type PropsType = {
-}
+type PropsType = {}
