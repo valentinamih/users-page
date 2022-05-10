@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["react/experimental"],
+    "types": ["react/experimental","node"],
     "target": "es5",
     "lib": [
       "dom",

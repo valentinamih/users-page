@@ -16,7 +16,7 @@ export const UserPage: React.FunctionComponent<PropsType> = (props) => {
     }, [dispatch])
     let [editMode, toggleEditMode] = useState(false)
     const formSubmit = (formData: any) => {
-        console.log(JSON.stringify(formData))
+        console.log(JSON.stringify(formData, null, 2))
         toggleEditMode(false)
     }
     let user = AppUseSelector(usersSelector.user)

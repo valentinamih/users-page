@@ -1,5 +1,5 @@
 import React from "react";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import {getUsers} from "./store/usersSlice";
 import {AppDispatch} from "./store/store";
 import {Sidebar} from "./components/Sidebar/Sidebar";
@@ -19,6 +19,5 @@ export const App: React.FunctionComponent<PropsType> = (props) => {
             <Route path={'/'} element={<UsersPage/>}/>
             <Route path='/user/:userId' element={<UserPage/>}/>
         </Routes>
-
     </div>
 }
