@@ -8,28 +8,32 @@ div .error input, textarea {
 
 div .error {
   border: 1px solid red;
+  width: 216px;
 }
 
 .formField {
   display: grid;
   margin-top: 3px;
   border-radius: 5px;
-  width: 211px;
 }
 
 input, textarea {
   border: 1px solid rgb(189, 189, 189);
   border-radius: 5px;
   margin: 0;
+  width: 212px;
   height: 22px;
   background-color: white;
   font-size: 12px;
 }
 
 textarea {
+  display: flex;
+  margin-right: 6px;
+  flex-grow: 2;
   resize: none;
   height: 50px;
-  width: 420px;
+  width: inherit;
 }
 
 /*# sourceMappingURL=FormControl.module.css.map */

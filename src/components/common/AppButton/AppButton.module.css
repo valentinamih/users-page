@@ -1,14 +1,14 @@
 .appButton {
-  display: grid;
-  align-items: center;
-  background-color: rgb(75, 81, 239);
-  border: 0;
-  border-radius: 5px;
-  padding: 5px 15px 5px 15px;
-  min-height: 24px;
-  width: fit-content;
-  overflow: hidden;
-  font-size: 14px;
+    display: grid;
+    align-items: center;
+    background-color: rgb(75, 81, 239);
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    min-height: 24px;
+    width: fit-content;
+    overflow: hidden;
+    font-size: 14px;
 }
 
 /*# sourceMappingURL=AppButton.module.css.map */

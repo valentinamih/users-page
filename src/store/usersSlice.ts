@@ -21,7 +21,6 @@ export const getUser = createAsyncThunk('users/getUser',
 export const sortUsers = createAsyncThunk('users/sortUsers',
     async function (filter: any, thunkAPI: any) {
         let users = thunkAPI.getState().usersReducer.users
-        console.log(filter.filter)
         return users.slice().sort((prev: UserType, next: UserType) => {
             if (filter.filter(prev) < filter.filter(next)) return -1;
             if (filter.filter(prev) < filter.filter(next)) return 1;
